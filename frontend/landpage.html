@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clash League Manager - Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <div class="min-h-screen overflow-x-hidden relative">
+
+    <!-- Background accents -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-amber-500/10 blur-3xl"></div>
+      <div class="absolute top-[30rem] -left-24 h-80 w-80 rounded-full bg-orange-500/10 blur-3xl"></div>
+      <div class="absolute top-[60rem] right-0 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
+        <div class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl border border-amber-400/20 bg-amber-400/10 text-lg font-bold text-amber-300">
+            C
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-slate-500">SaaS</p>
+            <h1 class="text-base font-bold md:text-lg">Clash League Manager</h1>
+          </div>
+        </div>
+
+        <nav class="hidden items-center gap-8 text-sm text-slate-300 lg:flex">
+          <a href="#beneficios" class="transition hover:text-white">Benefícios</a>
+          <a href="#produto" class="transition hover:text-white">Produto</a>
+          <a href="#como-funciona" class="transition hover:text-white">Como funciona</a>
+          <a href="#planos" class="transition hover:text-white">Planos</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button class="hidden rounded-2xl border border-slate-700 px-4 py-2.5 text-sm font-medium text-slate-200 transition hover:bg-slate-900 md:block">
+            Entrar
+          </button>
+          <button class="rounded-2xl bg-amber-400 px-4 py-2.5 text-sm font-semibold text-slate-950 transition hover:brightness-110">
+            Começar grátis
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 md:px-8 md:py-24 xl:grid-cols-2 xl:gap-12">
+        
+        <!-- Texto -->
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-300">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Plataforma pensada para líderes competitivos
+          </div>
+
+          <h2 class="mt-6 max-w-3xl text-4xl font-black leading-tight text-white md:text-6xl">
+            Gerencie <span class="text-amber-300">clãs</span>, <span class="text-amber-300">guerras</span> e <span class="text-amber-300">ligas</span> em um único painel.
+          </h2>
+
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
+            Acompanhe ranking, desempenho, guerras ativas e temporadas com uma experiência visual feita para quem leva Clash of Clans a sério.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button class="rounded-2xl 
+            bg-amber-400 
+            px-14 py-5 
+            text-lg 
+            font-semibold 
+            text-slate-950 
+            transition 
+            hover:brightness-110 
+            shadow-lg shadow-amber-500/20">
+              Ver demo
+            </button>
+          </div>
+
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-2xl font-bold text-white">+80</p>
+              <p class="mt-1 text-sm text-slate-400">clãs acompanhados</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Imagem do dashboard -->
+        <div class="relative">
+          <div class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-amber-400/10 to-orange-500/5 blur-2xl"></div>
+
+          <div class="relative">
+            <div class="overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900 shadow-2xl shadow-black/40">
+              <img
+                src="dashboard-preview.png"
+                alt="Preview do dashboard do Clash League Manager"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem / solution -->
+    <section class="relative border-y border-slate-800 bg-slate-900/40">
+      <div class="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-20">
+        <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">O problema</p>
+            <h3 class="mt-4 text-3xl font-bold md:text-4xl">
+              Organizar clãs competitivos no improviso custa desempenho.
+            </h3>
+
+            <div class="mt-8 space-y-4">
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+                <p class="font-semibold">Ranking manual e desorganizado</p>
+                <p class="mt-2 text-slate-400">
+                  Planilhas, prints e mensagens soltas tornam o acompanhamento da temporada cansativo.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+                <p class="font-semibold">Visão ruim de guerras e performance</p>
+                <p class="mt-2 text-slate-400">
+                  Sem um painel central, líderes perdem tempo tentando entender quem rendeu mais e onde melhorar.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+                <p class="font-semibold">Difícil escalar uma liga privada</p>
+                <p class="mt-2 text-slate-400">
+                  Quanto mais clãs participam, mais complexo fica controlar confrontos, pontos e histórico.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-emerald-300">A solução</p>
+            <h3 class="mt-4 text-3xl font-bold md:text-4xl">
+              Um hub visual para clãs, guerras, ranking e temporadas.
+            </h3>
+
+            <div class="mt-8 space-y-4">
+              <div class="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
+                <p class="font-semibold text-white">Tudo centralizado em um só lugar</p>
+                <p class="mt-2 text-slate-300">
+                  Acompanhe clãs, guerras, dados e evolução sem depender de organização manual.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
+                <p class="font-semibold text-white">Experiência pensada para líderes competitivos</p>
+                <p class="mt-2 text-slate-300">
+                  Use um dashboard claro, moderno e orientado a tomada de decisão rápida.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5">
+                <p class="font-semibold text-white">Base ideal para transformar sua liga em um projeto sério</p>
+                <p class="mt-2 text-slate-300">
+                  Temporadas, histórico, analytics e integrações em um mesmo produto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="beneficios">
+      <div class="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">Benefícios</p>
+          <h3 class="mt-4 text-3xl font-bold md:text-5xl">
+            Tudo que você precisa para transformar seu clã em operação.
+          </h3>
+          <p class="mt-4 text-lg text-slate-400">
+            O Clash League Manager combina gestão, competitividade e analytics numa interface que parece produto premium desde o primeiro acesso.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl">🏰</div>
+            <h4 class="mt-5 text-xl font-bold">Gestão de clãs</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Visualize membros, status, participação e informações essenciais do seu ecossistema competitivo.
+            </p>
+          </div>
+
+          <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl">⚔️</div>
+            <h4 class="mt-5 text-xl font-bold">Guerra em tempo real</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Acompanhe ataques, estrelas, eficiência e progresso de cada confronto num painel operacional.
+            </p>
+          </div>
+
+          <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl">🏆</div>
+            <h4 class="mt-5 text-xl font-bold">Ranking automático</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Monte ligas estilo campeonato com tabela, pontuação, aproveitamento e tendência de crescimento.
+            </p>
+          </div>
+
+          <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-6">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400/10 text-2xl">📊</div>
+            <h4 class="mt-5 text-xl font-bold">Analytics de performance</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Entenda evolução, consistência e destaques da temporada com gráficos e insights visuais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product preview / features -->
+    <section id="produto" class="border-y border-slate-800 bg-slate-900/30">
+      <div class="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">Produto</p>
+            <h3 class="mt-4 text-3xl font-bold md:text-5xl">
+              Uma experiência visual que parece software de verdade.
+            </h3>
+            <p class="mt-5 text-lg leading-8 text-slate-400">
+              O painel foi pensado para transmitir organização, competitividade e clareza. Em vez de improviso, você ganha um centro de comando para sua comunidade.
+            </p>
+
+            <div class="mt-8 space-y-5">
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+                <p class="font-semibold">Dashboard da temporada</p>
+                <p class="mt-2 text-slate-400">
+                  Cards de métricas, ranking resumido, guerra atual, atividades recentes e status das integrações.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+                <p class="font-semibold">Tela de liga</p>
+                <p class="mt-2 text-slate-400">
+                  Classificação clara, visual premium e leitura rápida do campeonato.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
+                <p class="font-semibold">War room operacional</p>
+                <p class="mt-2 text-slate-400">
+                  Monitore guerras em andamento com foco em ação, performance e decisão.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-4">
+            <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-5 shadow-2xl shadow-black/30">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-400">Liga</p>
+                  <h4 class="text-xl font-bold">Ranking da temporada</h4>
+                </div>
+                <span class="rounded-full border border-amber-400/20 bg-amber-400/10 px-3 py-1 text-sm text-amber-300">
+                  Ao vivo
+                </span>
+              </div>
+
+              <div class="mt-5 space-y-3 text-sm">
+                <div class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3">
+                  <span class="font-semibold text-amber-300">#1 Night Warriors</span>
+                  <span>324 pts</span>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3">
+                  <span>#2 Empire Forge</span>
+                  <span>309 pts</span>
+                </div>
+                <div class="flex items-center justify-between rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3">
+                  <span>#3 Royal Titans</span>
+                  <span>301 pts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-5">
+                <p class="text-sm text-slate-400">Guerra atual</p>
+                <h4 class="mt-2 text-lg font-bold">Night Warriors vs Lava Kings</h4>
+                <p class="mt-4 text-3xl font-black">31 ⭐</p>
+                <div class="mt-4 h-3 w-full overflow-hidden rounded-full bg-slate-800">
+                  <div class="h-full w-3/4 rounded-full bg-amber-400"></div>
+                </div>
+                <p class="mt-3 text-sm text-amber-300">05h 22m restantes</p>
+              </div>
+
+              <div class="rounded-[1.75rem] border border-slate-800 bg-slate-900 p-5">
+                <p class="text-sm text-slate-400">Analytics</p>
+                <h4 class="mt-2 text-lg font-bold">Evolução semanal</h4>
+                <div class="mt-6 flex h-32 items-end gap-3">
+                  <div class="h-12 w-full rounded-t-xl bg-slate-800"></div>
+                  <div class="h-16 w-full rounded-t-xl bg-slate-800"></div>
+                  <div class="h-14 w-full rounded-t-xl bg-slate-800"></div>
+                  <div class="h-20 w-full rounded-t-xl bg-slate-800"></div>
+                  <div class="h-24 w-full rounded-t-xl bg-amber-400"></div>
+                </div>
+                <p class="mt-4 text-sm text-slate-400">Performance crescente na temporada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="como-funciona">
+      <div class="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">Como funciona</p>
+          <h3 class="mt-4 text-3xl font-bold md:text-5xl">
+            Comece rápido, organize melhor, compita com visão.
+          </h3>
+          <p class="mt-4 text-lg text-slate-400">
+            O produto foi desenhado para ser simples de entender e poderoso na prática.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+          <div class="relative rounded-[1.75rem] border border-slate-800 bg-slate-900 p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400 text-xl font-black text-slate-950">1</div>
+            <h4 class="mt-6 text-2xl font-bold">Conecte seu clã</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Cadastre seu clã e prepare a base da sua operação competitiva dentro da plataforma.
+            </p>
+          </div>
+
+          <div class="relative rounded-[1.75rem] border border-slate-800 bg-slate-900 p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400 text-xl font-black text-slate-950">2</div>
+            <h4 class="mt-6 text-2xl font-bold">Acompanhe guerras e desempenho</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Visualize métricas, confrontos e evolução de forma centralizada e clara.
+            </p>
+          </div>
+
+          <div class="relative rounded-[1.75rem] border border-slate-800 bg-slate-900 p-7">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-400 text-xl font-black text-slate-950">3</div>
+            <h4 class="mt-6 text-2xl font-bold">Monte sua liga</h4>
+            <p class="mt-3 leading-7 text-slate-400">
+              Use ranking, temporadas e analytics para transformar sua comunidade em algo profissional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section id="planos" class="border-y border-slate-800 bg-slate-900/40">
+      <div class="mx-auto max-w-7xl px-4 py-16 md:px-8 md:py-24">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">Planos</p>
+          <h3 class="mt-4 text-3xl font-bold md:text-5xl">
+            Comece gratuito e evolua conforme sua liga cresce.
+          </h3>
+          <p class="mt-4 text-lg text-slate-400">
+            A estrutura ideal para validar o produto agora e preparar monetização depois.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 xl:grid-cols-3">
+          <div class="rounded-[2rem] border border-slate-800 bg-slate-950/80 p-8">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Free</p>
+            <h4 class="mt-4 text-3xl font-bold">Grátis</h4>
+            <p class="mt-3 text-slate-400">
+              Ideal para validar com um clã e explorar o painel.
+            </p>
+            <button class="mt-8 w-full rounded-2xl border border-slate-700 px-5 py-3 font-medium">
+                Ver demo
+            </button>
+            <div class="mt-8 space-y-4 text-sm text-slate-300">
+              <p>• Acesso a um painel com dados pre definidos</p>
+              <p>• Visualizacao clara das funcionalidades disponiveis</p>
+              <p>• Suporte para tirar duvidas</p>
+            </div>
+          </div>
+
+          <div class="relative rounded-[2rem] border border-amber-400/30 bg-slate-950 p-8 shadow-2xl shadow-amber-500/10">
+            <div class="absolute right-6 top-6 rounded-full border border-amber-400/20 bg-amber-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-amber-300">
+              Mais popular
+            </div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">Pro</p>
+            <h4 class="mt-4 text-3xl font-bold">
+              R$ 14,99<span class="text-lg text-slate-400">/mês</span>
+            </h4>
+            <p class="mt-3 text-slate-400">
+              Para líderes que querem escalar operação e acompanhar dados de verdade.
+            </p>
+            <button class="mt-8 w-full rounded-2xl bg-amber-400 px-5 py-3 font-semibold text-slate-950">
+                Falar com a equipe
+            </button>
+            <div class="mt-8 space-y-4 text-sm text-slate-300">
+              <p>• Ate 3 Clãs</p>
+              <p>• Analytics avançado</p>
+              <p>• Histórico de temporadas</p>
+              <p>• Integração com Discord</p>
+              <p>• Comparativos e destaques</p>
+              <p>• Suporte para tirar duvidas</p>
+            </div>
+          </div>
+
+          <div class="relative rounded-[2rem] border border-purple-400/30 bg-slate-950 p-8 shadow-2xl shadow-purple-500/10">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-purple-300">
+            Ultimate
+          </p>
+            <h4 class="mt-4 text-3xl font-bold">
+                R$ 29,99<span class="text-lg text-slate-400">/mês</span>
+              </h4>
+            <p class="mt-3 text-slate-400">
+              Perfeito para organizar ligas privadas e estruturas competitivas maiores.
+            </p>
+            <button class="mt-8 w-full rounded-2xl bg-purple-400 text-slate-950 px-5 py-3 font-semibold hover:bg-purple-300 transition">
+              Falar com a equipe
+            </button>
+            <div class="mt-8 space-y-4 text-sm text-slate-300">
+              <p>• Ilimitado</p>
+              <p>• Ligas privadas</p>
+              <p>• Múltiplas temporadas</p>
+              <p>• Gestão avançada de confrontos</p>
+              <p>• Branding da competição</p>
+              <p>• Suporte para tirar duvidas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="mx-auto max-w-6xl px-4 py-16 md:px-8 md:py-24">
+        <div class="overflow-hidden rounded-[2.5rem] border border-amber-400/20 bg-gradient-to-r from-slate-900 to-slate-950 p-8 md:p-12">
+          <div class="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-amber-300">Pronto para começar?</p>
+              <h3 class="mt-4 text-3xl font-bold md:text-5xl">
+                Transforme sua comunidade em uma liga organizada e visualmente profissional.
+              </h3>
+              <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-400">
+                Comece com uma estrutura que passa confiança para líderes, jogadores e possíveis parceiros. O primeiro passo para validar seu SaaS pode começar agora.
+              </p>
+            </div>
+
+            <div class="rounded-[2rem] border border-slate-800 bg-slate-950/80 p-6">
+              <p class="text-sm text-slate-400">Acesso inicial</p>
+              <h4 class="mt-2 text-2xl font-bold">Crie sua conta grátis</h4>
+              <p class="mt-3 text-slate-400">
+                Monte sua primeira temporada, explore o painel e veja o potencial do produto.
+              </p>
+              <div class="mt-6 space-y-3">
+                <button class="w-full rounded-2xl border border-slate-700 px-5 py-3 font-medium">
+                  Ver demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+      <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-10 md:px-8 lg:flex-row lg:items-center lg:justify-between">
+        <div>
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-2xl border border-amber-400/20 bg-amber-400/10 font-bold text-amber-300">
+              C
+            </div>
+            <div>
+              <p class="text-sm font-semibold">Clash League Manager</p>
+              <p class="text-sm text-slate-500">Gestão competitiva para clãs e ligas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-6 text-sm text-slate-400">
+          <a href="#" class="transition hover:text-white">Termos</a>
+          <a href="#" class="transition hover:text-white">Privacidade</a>
+          <a href="#" class="transition hover:text-white">Contato</a>
+          <a href="#" class="transition hover:text-white">Discord</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
